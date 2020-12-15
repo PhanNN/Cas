@@ -127,3 +127,5 @@ return [
         'cas_saml' => env('CAS_SAML', false),
 
         'cas_fixed_service_url' => env('CAS_FIXED_SERVICE_URL', null)
+
+]
