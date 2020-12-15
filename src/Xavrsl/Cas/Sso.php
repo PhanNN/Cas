@@ -46,7 +46,7 @@ class Sso {
 
         $this->configureProxyChain();
 
-        $fixedServiceURL = $this->config['cas_debug'];
+        $fixedServiceURL = $this->config['cas_fixed_service_url'];
         if ($fixedServiceURL) {
             phpCAS::setFixedServiceURL($fixedServiceURL);
         }
