@@ -45,6 +45,11 @@ class Sso {
         phpCAS::handleLogoutRequests();
 
         $this->configureProxyChain();
+
+        $fixedServiceURL = $this->config['cas_debug'];
+        if ($fixedServiceURL) {
+            phpCAS::setFixedServiceURL($fixedServiceURL);
+        }
     }
 
     /**
